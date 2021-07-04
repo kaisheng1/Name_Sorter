@@ -1,0 +1,13 @@
+C:\Users\Work\source\repos\Name_Sorter\Name_Sorter_Console\bin\Release\netcoreapp3.1\Name_Sorter_Console.exe
+C:\Users\Work\source\repos\Name_Sorter\Name_Sorter_Console\bin\Release\netcoreapp3.1\Name_Sorter_Console.deps.json
+C:\Users\Work\source\repos\Name_Sorter\Name_Sorter_Console\bin\Release\netcoreapp3.1\Name_Sorter_Console.runtimeconfig.json
+C:\Users\Work\source\repos\Name_Sorter\Name_Sorter_Console\bin\Release\netcoreapp3.1\Name_Sorter_Console.runtimeconfig.dev.json
+C:\Users\Work\source\repos\Name_Sorter\Name_Sorter_Console\bin\Release\netcoreapp3.1\Name_Sorter_Console.dll
+C:\Users\Work\source\repos\Name_Sorter\Name_Sorter_Console\bin\Release\netcoreapp3.1\Name_Sorter_Console.pdb
+C:\Users\Work\source\repos\Name_Sorter\Name_Sorter_Console\obj\Release\netcoreapp3.1\Name_Sorter_Console.csproj.AssemblyReference.cache
+C:\Users\Work\source\repos\Name_Sorter\Name_Sorter_Console\obj\Release\netcoreapp3.1\Name_Sorter_Console.AssemblyInfoInputs.cache
+C:\Users\Work\source\repos\Name_Sorter\Name_Sorter_Console\obj\Release\netcoreapp3.1\Name_Sorter_Console.AssemblyInfo.cs
+C:\Users\Work\source\repos\Name_Sorter\Name_Sorter_Console\obj\Release\netcoreapp3.1\Name_Sorter_Console.csproj.CoreCompileInputs.cache
+C:\Users\Work\source\repos\Name_Sorter\Name_Sorter_Console\obj\Release\netcoreapp3.1\Name_Sorter_Console.dll
+C:\Users\Work\source\repos\Name_Sorter\Name_Sorter_Console\obj\Release\netcoreapp3.1\Name_Sorter_Console.pdb
+C:\Users\Work\source\repos\Name_Sorter\Name_Sorter_Console\obj\Release\netcoreapp3.1\Name_Sorter_Console.genruntimeconfig.cache

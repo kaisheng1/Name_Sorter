@@ -1,0 +1,5 @@
+C:\Users\Work\OneDrive - Queensland University of Technology\Documents\Name_Sorter_Console.exe
+C:\Users\Work\OneDrive - Queensland University of Technology\Documents\Name_Sorter_Console.dll
+C:\Users\Work\OneDrive - Queensland University of Technology\Documents\Name_Sorter_Console.deps.json
+C:\Users\Work\OneDrive - Queensland University of Technology\Documents\Name_Sorter_Console.runtimeconfig.json
+C:\Users\Work\OneDrive - Queensland University of Technology\Documents\Name_Sorter_Console.pdb

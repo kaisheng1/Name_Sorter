@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "MB8dnIm2YBBsVWqH60OjHx4NP54IwI6ROgKmUEsJA1jeUtzvHHPygVZ1dMoCHZ5R1871T+26XKWn5IZkwhDKDg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Work\\source\\repos\\Name_Sorter\\Name_Sorter_Console\\Name_Sorter_Console.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Work\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\3.1.16\\microsoft.netcore.app.runtime.win-x86.3.1.16.nupkg.sha512",
+    "C:\\Users\\Work\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\3.1.16\\microsoft.windowsdesktop.app.runtime.win-x86.3.1.16.nupkg.sha512",
+    "C:\\Users\\Work\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\3.1.16\\microsoft.aspnetcore.app.runtime.win-x86.3.1.16.nupkg.sha512"
+  ],
+  "logs": []
+}
