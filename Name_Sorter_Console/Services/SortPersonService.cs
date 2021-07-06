@@ -17,7 +17,7 @@ namespace Name_Sorter_Console.Service
             return BubbleSort(unsortedList);
         }
 
-        public List<Person> BubbleSort(List<Person> unsortedList)
+        public List<T> BubbleSort<T>(List<T> unsortedList) where T : IComparable<T>
         {
             int n = unsortedList.Count;
             for (int i = 0; i < n - 1; i++)
@@ -27,13 +27,13 @@ namespace Name_Sorter_Console.Service
                     if (unsortedList[j].CompareTo(unsortedList[j + 1]) > 0)
                     {
                         // swap temp and arr[i]
-                        Person temp = unsortedList[j];
+                        T temp = unsortedList[j];
                         unsortedList[j] = unsortedList[j + 1];
                         unsortedList[j + 1] = temp;
                     }
-                }  
+                }
             }
-                
+
             return unsortedList;
         }
     }

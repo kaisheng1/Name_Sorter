@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Name_Sorter_Console": {
+      "commandName": "Project",
+      "commandLineArgs": "./data/test1.txt"
+    }
+  }
+}
