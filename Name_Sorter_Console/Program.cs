@@ -4,6 +4,7 @@ using Name_Sorter_Console.Service;
 using System;
 using System.IO;
 using System.Collections.Generic;
+using Name_Sorter_Console.Services;
 
 namespace Name_Sorter_Console
 {
@@ -18,10 +19,10 @@ namespace Name_Sorter_Console
         /// A constructor of Program, defining dependencies.
         /// </summary>
         /// <param name="inputPath">The path of the input file.</param>
-        public Program(string inputPath)
+        public Program(string inputPath, ISortService<Person> sortPersonService)
         {
-            _repo = new LocalDataRepository();
-            _sortPersonService = new SortPersonService();
+            _repo = new LocalDataRepository(inputPath);
+            _sortPersonService = sortPersonService;
             _inputPath = inputPath;
             _outputPath = "./sorted-names-list.txt";
         }
@@ -30,13 +31,14 @@ namespace Name_Sorter_Console
         /// </summary>
         /// <param name="inputPath">The path of the input.</param>
         /// <param name="outputPath">The path of the output.</param>
-        public Program(string inputPath, string outputPath)
+        public Program(string inputPath, string outputPath, ISortService<Person> sortPersonService)
         {
-            _repo = new LocalDataRepository();
-            _sortPersonService = new SortPersonService();
+            _repo = new LocalDataRepository(inputPath);
+            _sortPersonService = sortPersonService;
             _inputPath = inputPath;
             _outputPath = outputPath;
         }
+
         /// <summary>
         /// Prints the list of Person.
         /// </summary>
@@ -68,7 +70,7 @@ namespace Name_Sorter_Console
         /// </summary>
         public void Run()
         {
-            List<Person> unsortedPersonList = _repo.GetPeopleList(_inputPath);
+            List<Person> unsortedPersonList = _repo.GetPeopleList();
             List<Person> sortedPersonList = _sortPersonService.Sort(unsortedPersonList);
             Print(sortedPersonList);
             Output(sortedPersonList);
@@ -80,8 +82,18 @@ namespace Name_Sorter_Console
         static void Main(string[] args)
         {
             string inputPath = args[0];
+            string reversed = args[1];
 
-            new Program(inputPath).Run();
+
+            if (reversed == "--reversed")
+            {
+                new Program(inputPath, new ReverseSortPersonService()).Run();
+            }
+            else
+            {
+                new Program(inputPath, new SortPersonService()).Run();
+            }
+
 
         }
     }

@@ -7,6 +7,6 @@ namespace Name_Sorter_Console.Data
 {
     public interface IDataRepository
     {
-        public List<Person> GetPeopleList(string inputPath);
+        public List<Person> GetPeopleList();
     }
 }

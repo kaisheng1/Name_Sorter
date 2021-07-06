@@ -12,13 +12,14 @@ namespace Name_Sorter_Testing
 
         public LocalDataRepositoryTest()
         {
-            _repo = new LocalDataRepository();
+            string inputPath = "../../../data/test1.txt";
+            _repo = new LocalDataRepository(inputPath);
         }
         [Fact]
         public void Get_People_List_Successful()
         {
             // Arrange
-            string inputPath = "../../../data/test1.txt";
+            
             List<Person> expected = new List<Person>() { 
                 new Person { GivenNames = new string[] { "John" }, LastName = "Ahaha" },
                 new Person { GivenNames = new string[] { "Sword" }, LastName = "Blade" },
@@ -27,7 +28,7 @@ namespace Name_Sorter_Testing
             };
 
             // Act
-            List<Person> personList = _repo.GetPeopleList(inputPath);
+            List<Person> personList = _repo.GetPeopleList();
 
             // Assert
             for (int i = 0; i < expected.Count; i++)

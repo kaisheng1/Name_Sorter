@@ -11,9 +11,11 @@ namespace Name_Sorter_Console.Data
     public class LocalDataRepository : IDataRepository
     {
         private IValidator<Person> _personValidator;
-        public LocalDataRepository()
+        private string _inputPath;
+        public LocalDataRepository(string inputPath)
         {
             _personValidator = new PersonValidator();
+            _inputPath = inputPath;
         }
 
         /// <summary>
@@ -21,9 +23,9 @@ namespace Name_Sorter_Console.Data
         /// </summary>
         /// <param name="inputPath">The path of the input file.</param>
         /// <returns>personList, which is a list of People model.</returns>
-        public List<Person> GetPeopleList(string inputPath) 
+        public List<Person> GetPeopleList() 
         {
-            string[] lines = File.ReadAllLines(inputPath);
+            string[] lines = File.ReadAllLines(_inputPath);
             List<Person> personList = new List<Person>();
 
             foreach (string line in lines)
